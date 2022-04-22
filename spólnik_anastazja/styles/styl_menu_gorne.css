@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+:root {
+    --nameColor: #edf0f1;
+    --nameShadow: #edf0f1;
+    --background: #333;
+    --shadows: #342B09;
+    --buttonsBackground: #edf0f1;
+    --buttonsForeground: #ffffff;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width:900px) {
+    #bigMenu {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #mediumMenu {
+        visibility: hidden;
+    }
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2.5% 8% 2.5% 10%;
+    background-color: var(--background);
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.menu .logo
+{
+    width: 10%;
+    height : 80%;
+    padding: 1%;
+    margin-right : auto;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-seri;
+    font-weight: 500;
+    font-size: 1.5vw;
+    color: white;
+    text-shadow: -0.5px -0.5px var(--nameShadow);
+    transition : transform 2s;
+}
+
+.obok
+{
+    width: 110%;
+    display: flex;
+    align-items:center;
+    justify-content:flex-end;
+}
+
+.logo:hover
+    {
+    transform: rotate(360deg);
+    }
+
+@keyframes appear{
+        from{
+          opacity: 0;
+        }
+        to{
+          opacity: 1;
+        }
+      }
+      
+.appear
+{
+    animation-name: appear;
+    animation-duration: 2s;
+}
+
+.logo img {
+    width: 70%;
+    transition: transform .25s, visibility .25s ease-in;
+}
+
+.logo:hover img {
+    transform: scale(1.1);
+}
+
+.dropbtn img {
+    max-width: 50%;
+}
+
+.dropbtn img:hover {
+    opacity: 0.5;
+}
+
+.dropdown a {
+    text-decoration: none;
+    border: none;
+    width: 100%;
+    display: flex;
+}
+
+.dropbtn {
+    width: 70%;
+    font-family: 'Montserrat', sans-seri;
+    background-color: var(--buttonsBackground);
+    border-radius: 50px;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    font-size: 1.3vw;
+    border: none;
+    cursor: pointer;
+    text-shadow: -0.7px -0.7px 0.5px var(--shadows);
+    transition: transform .25s, visibility .25s ease-in;
+}
+
+.dropdown {
+    width: 10%;
+    padding: 1%;
+    position: relative;
+}

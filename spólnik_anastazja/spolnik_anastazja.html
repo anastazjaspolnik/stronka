@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang = "pl">
+  <head>
+      <meta charset = "utf-8" />
+      <meta name = "author" content = "Anastazja Spólnik" >
+      <meta name = "keywords" content = "sport, siatkówka, zawodnicy, zasady">
+      <meta name = "description" content = "Strona zawiera wszystkie najważniejsze informacje związane z polską siatkówką.">
+      <title>Siatkówka</title>
+      <link rel="shortcut icon" href="Images/ikonka.jpg" />
+      <link rel="stylesheet" media="screen" href="styles/style.css" />
+      <link rel="stylesheet" media="screen" href="styles/styl_menu_gorne.css"/>
+      <link href="./styles/all.css" rel="stylesheet" />  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          $(".menu a, .side-menu a").on("click", function(event){
+            if(this.hash !== ""){
+              event.preventDefault();
+              var hash = this.hash;
+              $("html, body").animate(
+                {
+                  scrollTop: $(hash).offset().top,
+                },
+                800,
+                function(){
+                  window.location.hash = hash;
+                }
+              );
+            }
+          });
+        });
+
+        $(window).resize(function() {
+          if($(window).width() < 600) {
+            $(".side-menu").hide();
+          }
+          else {
+            $(".side-menu").show();
+          }
+        });
+     
+      </script>
+         
+  
+  </head>
+  <body style="margin: 0px;">
+    <header>
+      <nav class="menu" id="smallMenu">
+        <div class = "appear">
+         <div class="logo">
+            <img src="images/volleyball-solid.svg" alt="SIATKÓWKA">
+         </div>
+        </div>
+
+        <div class = "obok">
+        <div class="dropdown">
+          <a href="spolnik_anastazja.html#sekcja1"><button class="dropbtn"><img src="images/feather-solid.svg" alt="piórka"></button></a>
+      </div>
+
+      <div class="dropdown">
+          <a href="spolnik_anastazja.html#sekcja2"><button class="dropbtn"><img src="images/flag-solid.svg" alt = "flaga"></button></a>
+      </div>
+
+      <div class="dropdown">
+          <a href="spolnik_anastazja.html#sekcja3"><button class="dropbtn"><img src="images/earth-americas-solid.svg" alt = "ziemia"></button></a>
+          </div>
+      
+
+      <div class="dropdown">
+          <a href="spolnik_anastazja.html#sekcja4"><button class="dropbtn"><img src="images/people-group-solid.svg" alt="ludzie"></button></a>
+          </div>
+          </div>
+    </nav>
+
+
+    <nav class="menu" id="mediumMenu">
+      <div class = "appear">
+        <div class="logo">
+            <img src="images/volleyball-solid.svg" alt="SIATKÓWKA">
+        </div>
+      </div>
+
+
+        <div class = "obok">
+        <div class="dropdown">
+          <a href="spolnik_anastazja.html#sekcja1"><button class="dropbtn">Opis</button></a>
+        </div>
+
+        <div class="dropdown">
+          <a href="spolnik_anastazja.html#sekcja2"><button class="dropbtn">Świat</button></a>
+        </div>
+
+        <div class="dropdown">
+          <a href="spolnik_anastazja.html#sekcja3"><button class="dropbtn">Polska</button></a>
+        </div>
+
+        <div class="dropdown">
+          <a href="spolnik_anastazja.html#sekcja4"><button class="dropbtn">Drużyna</button></a>
+        </div>     
+        </div>
+
+    </nav>
+
+    <nav class="menu" id="bigMenu"> 
+      <div class = "appear">
+        <div class="logo">
+            SIATKÓWKA
+        </div>
+      </div>
+
+        <div class = "obok">
+        <div class="dropdown">
+          <a href="spolnik_anastazja.html#sekcja1"><button class="dropbtn">Opis</button></a>
+        </div>
+
+        <div class="dropdown">
+          <a href="spolnik_anastazja.html#sekcja2"><button class="dropbtn">Świat</button></a>
+        </div>
+
+        <div class="dropdown">
+          <a href="spolnik_anastazja.html#sekcja3"><button class="dropbtn">Polska</button></a>
+        </div>
+
+        <div class="dropdown">
+          <a href="spolnik_anastazja.html#sekcja4"><button class="dropbtn">Drużyna</button></a>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="side-menu-container">
+      <nav class="side-menu">
+        <a href = "spolnik_anastazja.html#sekcja1"><button class = "dropbtn"><img src="images/feather-solid.svg" alt="piórka"></button></a>
+        <br>
+        <a href = "spolnik_anastazja.html#sekcja2"><button class="dropbtn"><img src="images/flag-solid.svg" alt="flaga"></button></a>
+        <br>
+        <a href = "spolnik_anastazja.html#sekcja3"><button class="dropbtn"><img src="images/earth-americas-solid.svg" alt="ziemia"></button></a>
+        <br>
+        <a href = "spolnik_anastazja.html#sekcja4"><button class="dropbtn"><img src="images/people-group-solid.svg" alt="ludzie"></button></a>
+      </nav>
+    </div>
+
+      </header>
+    
+      <div class = "section-welcome"> 
+        <img class = "background" src = "images/landing-page.jpg" alt = "tło">
+
+      </div> 
+      
+      <div class = "container-main container">
+        <div class = "container" id = "sekcja1">
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1>Siatkówka w Polsce</h1>
+          <br>
+          <h2>Na czym właściwie polega siatkówka?</h2>
+    
+          <p>
+                Siatkówka to sport drużynowy, w którym biorą udział dwa zespoły po 6 zawodników w każdym
+                 (rozgrywający, atakujący, dwóch środkowych i dwóch przyjmujących, libero). Na boisku przebywa 
+                 jednak tylko sześciu zawodników, libero zmienia się ze środkowym będącym w linii obrony,
+                  gdy drużyna przyjmuje zagrywkę.Siatkówka polega na odbijaniu piłki dowolną częścią ciała 
+                  (najczęściej rękoma) tak, aby przeleciała nad siatką i dotknęła połowy boiska należącej 
+                  do przeciwnika. Każdy zespół może wykonać trzy odbicia – odbiór, wystawa i atak - każde 
+                  następne jest błędem. Punkty zdobywa się na wiele sposobów, na przykład, gdy piłka dotknie 
+                  połowy boiska przeciwnika lub gdy upadnie ona poza boiskiem, a rywal dotknął jej jako ostatni. 
+                  Gra toczy się do momentu, gdy jedna z drużyn wygra 3 sety (w grupach młodzieżowych 2 –
+                   młodziczki i młodzicy) - w każdym z nich rywalizacja toczy się do zdobycia 25 punktów przy 
+                   przewadze co najmniej dwóch punktów. Przy wyniku 24:24 gra toczy się "na przewagi", dopóki
+                    któraś z drużyn osiągnie dwupunktową przewagę nad drugą. Wyjątek stanowi piąty set, 
+                    nazywany "setem decydującym", który jest rozgrywany, jeśli stan meczu po 4 setach wynosi
+                     2:2. W tym secie zawodnicy grają do 15 punktów, również przy przewadze co najmniej dwóch
+                      punktów.</p>
+        
+        <figure class = "polaroid">
+        <img src="Images/druzyna.jpg" alt = "druzyna" width = "700" height = "500" class = "photos">
+        <figcaption>
+           Skład + sztab treningowy
+        </figcaption>
+        </figure>
+          <br>
+          <br>
+    
+       
+        <a href="https://siatka.org/kategoria/aktualnosci/">ZOBACZ -> siatkówka - aktualności</a> 
+    
+          <br>
+          <br>
+       
+    
+        <h3>Zagrywka</h3>
+            <p>
+                Zagrywka (lub też serwis) jest wprowadzeniem piłki do gry mające na celu zdobycie punktu lub utrudnienie jej przyjęcia przeciwnikowi. Zagrywkę wykonuje się zza linii końcowej boiska ze strefy zagrywki sposobem dolnym lub górnym. Piłka po zagrywce może dotknąć siatki pod warunkiem, że przeleci na stronę przeciwnika. Drużyna przeciwna nie może blokować zagrywki ani atakować piłki, kiedy ta znajduje się całkowicie powyżej siatki i nad polem ataku.
+    
+    Piłka jest zagrywana przez prawego zawodnika linii obrony z pola zagrywki, znajdującego się za 9 metrem boiska. Pierwszy sędzia zezwala na wykonanie zagrywki po stwierdzeniu, że zawodnik zagrywający posiada piłkę i oba zespoły są przygotowane do gry.
+    
+    Pierwsza zagrywka w pierwszym secie oraz w tie-breaku wykonywana jest przez zespół ustalony w losowaniu. W pozostałych setach pierwszą zagrywkę wykonuje zespół, który nie wykonywał jej jako pierwszy w secie poprzednim. Każdą inną zagrywkę w secie wykonuje zespół, który jako ostatni zdobył punkt. </p>
+    
+
+   
+           <br>
+           <b>Rodzaje zagrywek:</b>
+           <br>
+           <ul class = "lista">
+            <li>dolna</li>
+            <li>boczna</li>
+            <li>tenisowa</li>
+            <li>z wyskoku</li>
+            <li>float</li>
+          </ul>
+
+          <br>
+          <br>
+          
+          <hr/>
+
+        <br>
+        </div>
+        <div class = "container" id = "sekcja2">
+          <h1>Historia siatkówki</h1>
+          <p>
+              Pomysłodawcą reguł gry w piłkę siatkową był William G. Morgan – na co dzień nauczyciel wychowania fizycznego w Young Men's Christian Associaton (YMCA) w Holyoke w Massachusetts. 9 lutego 1895 odbył się w tamtejszej sali gimnastycznej premierowy pokaz stworzonej przez niego dyscypliny, którą wówczas nazywano Minonette.
+  
+  W dniach 18–20 kwietnia 1947, podczas Kongresu w Paryżu, powołano do życia Międzynarodową Federację Piłki Siatkowej (FIVB). Jej pierwszym prezesem został Paul Libaud (sprawował on tę funkcję aż do 1984), a jednym z jego zastępców został Zygmunt Nowak. Wśród założycieli FIVB było 14 krajów – Belgia, Brazylia, Czechosłowacja, Egipt, Francja, Holandia, Jugosławia, Polska, Portugalia, Rumunia, Urugwaj, Stany Zjednoczone, Węgry i Włochy.
+  
+  W 1949 zorganizowano pierwsze Mistrzostwa Świata mężczyzn, a w 1952 Mistrzostwa Świata kobiet. Mistrzostwa Europy mężczyzn wprowadzono do kalendarza w 1948, a Mistrzostwa Europy kobiet w 1949. Do programu olimpijskiego siatkówka (zarówno w wydaniu kobiet, jak i mężczyzn) weszła w 1964, podczas Letnich Igrzysk Olimpijskich w Tokio.
+          </p>
+          <br>
+         
+          <hr/>
+
+        </div>
+        <div class = "container" id = "sekcja3">
+          <h1>Historia siatkówki w Polsce</h1>
+        <b>
+            Do Polski siatkówka trafiła za pośrednictwem YMCA, a pierwszy mecz pokazowy miał miejsce w Warszawie w 1919. Rok później w Łodzi rozegrano turniej drużyn szkolnych. W 1929 w Warszawie rozegrano pierwsze mistrzostwa Polski – w rywalizacji kobiet zwyciężył AZS Warszawa, a wśród mężczyzn YMCA Łódź.
+
+            W okresie międzywojennym siatkówka była zrzeszona, razem z paroma innymi dyscyplinami, w Polskim Związku Palanta i Gier Ruchowych (od 1925), w Polskim Związku Gier Ruchowych (od 1926), w Polskim Związku Gier Sportowych (od 1928 – co uznaje się za datę oficjalnych narodzin siatkarskiego związku) i w Polskim Związku Piłki Ręcznej (od 1936).
+            
+            Polski Związek Piłki Siatkowej (PZPS) jako samodzielny związek sportowy został powołany do życia 30 czerwca 1957, podczas Krajowej Konferencji Sprawozdawczo-Wyborczej Piłki Siatkowej. Głównymi partnerami, a zarazem sponsorami PZPS, są Polkomtel i PKN Orlen, którzy wspierają także Reprezentacje Polski w piłce siatkowej kobiet i mężczyzn.
+            
+            Reprezentacja polskich siatkarek pierwszy mecz rozegrała w Warszawie 14 lutego 1948, pokonując Czechosłowację 3:1. Reprezentacja siatkarzy zadebiutowała na arenie międzynarodowej także z Czechosłowacją w Warszawie 28 lutego 1948, przegrywając 2:3.
+            
+            Reprezentacja polskich siatkarzy w swojej historii zdobyła złoty medal na Igrzyskach Olimpijskich w Montrealu 1976, a także trzykrotnie tytuł Mistrzów Świata: w roku 1974 w Meksyku, w 2014 w Polsce, pokonując w meczu finałowym zespół Brazylii 3:1, przerywając tym samym trwającą nieprzerwanie 12 lat hegemonię tej drużyny, oraz w 2018 we Włoszech i Bułgarii, pokonując w meczu finałowym zespół Brazylii 3:0.
+        </b>
+        <br>
+        <br>
+        
+        <figure class = "polaroid">
+        <img src="Images/liga.jpg" alt = "liga" width = "700" height = "500" class = "photos">
+        <figcaption>
+          Główny skład reprezentacji
+        </figcaption>
+        </figure>
+       
+        <hr/>
+
+        <br>
+
+        </div >
+        <div class = "container" id = "sekcja4">
+          <h1>Skład reprezentacji Polski mężczyzn</h1>
+          <br>
+          
+
+          <p>
+              Zespół siatkarski reprezentujący Rzeczpospolitą Polską w meczach i sportowych imprezach międzynarodowych, powoływany przez selekcjonera, w którym występować mogą wszyscy zawodnicy posiadający obywatelstwo polskie. Reprezentuje Polskę na arenie międzynarodowej we wszystkich rozgrywkach organizowanych pod egidą FIVB i CEV (tj. Igrzyskach Olimpijskich, Mistrzostwach Świata, Mistrzostwach Europy, Pucharze Świata, Pucharze Wielkich Mistrzów, Lidze Narodów oraz eliminacjach do tych imprez). Za jej funkcjonowanie odpowiedzialny jest Polski Związek Piłki Siatkowej (PZPS). Obecnie trenerem jest Nikola Grbić. Sześciokrotnie była wybierana najlepszą drużyną roku w Plebiscycie „Przeglądu Sportowego” w 2006, 2009, 2011, 2012, 2014 i 2018.
+              <br>
+              <br>
+              <a href="https://www.google.pl/search?q=sk%C5%82ad+reprezentacji+polski+w+siatk%C3%B3wk%C4%99&sxsrf=APq-WBvEY2tFBdMwn6kkdBFCXAGg9OW-SQ%3A1646587177574&ei=Ke0kYq3TIoeyrgS476CIDw&ved=0ahUKEwjti76e_7H2AhUHmYsKHbg3CPEQ4dUDCA4&oq=sk%C5%82ad+reprezentacji+polski+w+siatk%C3%B3wk%C4%99&gs_lcp=Cgdnd3Mtd2l6EAxKBAhBGABKBAhGGABQAFgAYABoAHABeACAAQCIAQCSAQCYAQA&sclient=gws-wiz">Skład reprezentacji Polski</a>
+          </p>
+
+          <br>
+  
+          <table class = "table">
+              <tr>
+                <th>Zawodnik</th>
+                <th>Pozycja</th>
+                <th>Wzrost</th>
+                <th>Waga</th>
+              </tr>
+              <tr>
+                <td>Fabian Drzyzga</td>
+                <td>Rozgrywający</td>
+                <td>196 cm</td>
+                <td>95 kg</td>
+              </tr>
+              <tr>
+                  <td>Marcin Janusz</td>
+                  <td>Rozgrywający</td>
+                  <td>191 cm</td>
+                  <td>81 kg</td>
+                </tr>
+                <tr>
+                  <td>Marcin Komenda</td>
+                  <td>Rozgrywający</td>
+                  <td>198 cm</td>
+                  <td>92 kg</td>
+                </tr>
+                <tr>
+                  <td>Grzegorz Łomacz</td>
+                  <td>Rozgrywający</td>
+                  <td>188 cm</td>
+                  <td>80 kg</td>
+                </tr>
+                <tr>
+                  <td>Mateusz Bieniek</td>
+                  <td>Środkowy</td>
+                  <td>210 cm</td>
+                  <td>98 kg</td>
+                </tr>
+                <tr>
+                  <td>Norbert Huber</td>
+                  <td>Środkowy</td>
+                  <td>207 cm</td>
+                  <td>91 kg</td>
+                </tr>
+                <tr>
+                  <td>Karol Kłos</td>
+                  <td>Środkowy</td>
+                  <td>201 cm</td>
+                  <td>87 kg</td>
+                </tr>
+                <tr>
+                  <td>Jakub Kochanowski</td>
+                  <td>Środkowy</td>
+                  <td>199 cm</td>
+                  <td>84 kg</td>
+                </tr>
+                <tr>
+                  <td>Piotr Nowakowski</td>
+                  <td>Środkowy</td>
+                  <td>205 cm</td>
+                  <td>101 kg</td>
+                </tr>
+                <tr>
+                  <td>Łukasz Kaczmarek</td>
+                  <td>Atakujący</td>
+                  <td>204 cm</td>
+                  <td>102 kg</td>
+                </tr>
+                <tr>
+                  <td>Dawid Konarski</td>
+                  <td>Atakujący</td>
+                  <td>198 cm</td>
+                  <td>101 kg</td>
+                </tr>
+                <tr>
+                  <td>Bartosz Kurek</td>
+                  <td>Atakujący</td>
+                  <td>205 kg</td>
+                  <td>105 kg</td>
+                </tr>
+              <tr>
+                 <td>Maciej Muzaj</td>
+                  <td>Atakujący</td>
+                  <td>208 cm</td>
+                  <td>88 kg</td>
+              </tr>
+              <tr>
+                  <td>Bartosz Bednorz</td>
+                  <td>Przyjmujący</td>
+                  <td>201 cm</td>
+                  <td>87 kg</td>
+                </tr>
+                <tr>
+                  <td>Tomasz Fornal</td>
+                  <td>Przyjmujący</td>
+                  <td>200 cm</td>
+                  <td>92 kg</td>
+                </tr>
+                <tr>
+                  <td>Michał Kubiak</td>
+                  <td>Przyjmujący</td>
+                  <td>192 cm</td>
+                  <td>87 kg</td>
+                </tr>
+                <tr>
+                  <td>Bartosz Kwolek</td>
+                  <td>Przyjmujący</td>
+                  <td>193 cm</td>
+                  <td>93 kg</td>
+                </tr>
+                <tr>
+                  <td>Wilfredo Leon</td>
+                  <td>Przyjmujący</td>
+                  <td>201 cm</td>
+                  <td>95 kg</td>
+                  </tr>
+                  <tr>
+                      <td>Kamil Semeniuk</td>
+                      <td>Przyjmujący</td>
+                      <td>194 cm</td>
+                      <td>85 kg</td>
+                    </tr>
+                    <tr>
+                      <td>Aleksander Śliwka</td>
+                      <td>Przyjmujący</td>
+                      <td>198 cm</td>
+                      <td>83 kg</td>
+                    </tr>
+                    <tr>
+                      <td>Artur Szalpuk</td>
+                      <td>Przyjmujący</td>
+                      <td>201 cm</td>
+                      <td>93 kg</td>
+                    </tr>
+                    <tr>
+                      <td>Jakub Popiwczak</td>
+                      <td>Libero</td>
+                      <td>180 cm</td>
+                      <td>78 kg</td>
+                    </tr>
+                    <tr>
+                      <td>Damian Wojtaszek</td>
+                      <td>Libero</td>
+                      <td>180 cm</td>
+                      <td>79 kg</td>
+                    </tr>
+                    <tr>
+                      <td>Paweł Zatorski</td>
+                      <td>Libero</td>
+                      <td>184 cm</td>
+                      <td>73 kg</td>
+                    </tr>
+                
+            </table>
+            <br>
+            <br>
+
+            <div class="dwielisty"> 
+            
+              
+                
+                <ol>
+                  <li>Trenerzy:</li>
+              <li>Romuald Wirszyłło</li>
+              <li>Zygmunt Kraus</li>
+              <li>Wiesław Piotrowski</li>
+              <li>Leonard Michniewski</li>
+              <li>Jacek Busz</li>
+              <li>Józef Śliwka</li>
+              <li>Gwidon Grochowski</li>
+              <li>Tadeusz Szlagor</li>
+              <li>Hubert Wagner</li>
+              <li>Jerzy Welcz</li>
+              <li>Aleksander Skiba</li>
+              <li>Stanisław Gościniak</li>
+              <li>Leszek Milewski</li>
+              <li>Edward Skorek</li>
+              <li>Zbigniew Zarzycki</li>
+              <li>Ryszard Kruk</li>
+              <li>Wiktor Krebok</li>
+              <li>Ireneusz Mazur</li>
+              <li>Ryszard Bosek</li>
+              <li>Waldemar Wspaniały</li>
+              <li>Raul Lozano</li>
+              <li>Daniel Castellani</li>
+              <li>Andrea Anastasi</li>
+              <li>Stephane Antiga</li>
+              <li>Ferdinando De Giorgi</li>
+              <li>Vital Heynen</li>
+              <li>Nikola Grbić</li>
+            </ol>
+            
+           
+            <ul>
+            <li>Sztab:</li>
+              <li>trener</li>
+              <li>3 asystentów trenera</li>
+              <li>2 trenerów przygotowania fizycznego</li>
+              <li>lekarz prowadzący</li>
+              <li>statystyk</li>
+              <li>2 fizjoterapeutów</li>
+              <li>kierownik</li>
+              <li>menadżer</li>
+            </ul>
+
+            </div>
+            
+  
+
+
+        </div>
+      
+      </div>
+
+      <div class = "stopka"></div>
+      <footer > 
+        <p>2022, Anastazja Spólnik. All rights reserved.©</p>
+      </footer>
+    
+
+    
+
+     
+
+  </body>
+</html>
